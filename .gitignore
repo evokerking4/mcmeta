@@ -1,0 +1,6 @@
+/target
+
+/minecraft
+version_manifest.json
+version_manifest_v2.json
+download_mc.py

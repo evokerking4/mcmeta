@@ -1,0 +1,260 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug: Basic usage (no args)",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug: With JSON file",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["version_manifest_v2.json"]
+        },
+        {
+            "name": "Debug: With version",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--version", "1.20.1"]
+        },
+        {
+            "name": "Debug: With custom base path",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--base-path", "/tmp/minecraft"]
+        },
+        {
+            "name": "Debug: Fetch manifest only",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--fetch-manifest"]
+        },
+        {
+            "name": "Debug: Fetch v1 manifest",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--fetch-manifest", "--v1"]
+        },
+        {
+            "name": "Debug: Fetch version data",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--fetch"]
+        },
+        {
+            "name": "Debug: With release type (release)",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--release-type", "release"]
+        },
+        {
+            "name": "Debug: With release type (snapshot)",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--release-type", "snapshot"]
+        },
+        {
+            "name": "Debug: JSON file + version",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["version_manifest_v2.json", "--version", "1.19.4"]
+        },
+        {
+            "name": "Debug: JSON file + custom base path",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["version_manifest_v2.json", "--base-path", "/tmp/test"]
+        },
+        {
+            "name": "Debug: Version + custom base path",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--version", "1.18.2", "--base-path", "/tmp/test"]
+        },
+        {
+            "name": "Debug: Version + release type",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--version", "23w35a", "--release-type", "snapshot"]
+        },
+        {
+            "name": "Debug: Completion - Bash",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "bash"]
+        },
+        {
+            "name": "Debug: Completion - Zsh",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "zsh"]
+        },
+        {
+            "name": "Debug: Completion - Fish",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "fish"]
+        },
+        {
+            "name": "Debug: Completion - PowerShell",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "powershell"]
+        },
+        {
+            "name": "Debug: Completion - Elvish",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "elvish"]
+        },
+        {
+            "name": "Debug: Full combo (JSON + version + base path)",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["version_manifest_v2.json", "--version", "1.17.1", "--base-path", "/tmp/full-test"]
+        },
+        {
+            "name": "Debug: Help",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["--help"]
+        },
+        {
+            "name": "Debug: Completion help",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=mcmeta"
+                ]
+            },
+            "args": ["completion", "--help"]
+        }
+    ]
+}
